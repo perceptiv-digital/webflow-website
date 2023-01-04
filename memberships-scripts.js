@@ -137,15 +137,15 @@
         })
     }
 });
-</script>
 
-<script>
+
+
 $('#ranger').change(function(){
 	if($('#ranger').val() < 20){
 		$(".pd-membership-cost").html(($('#ranger').val()*180).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,"));
 		$('.pricing-card').removeClass('active-1 active-2 active-3 display-hidden');
 		$('.pricing-card').addClass('active-1');      
-    $('.memberships-hourly-change').textContent = 'New text content';
+    		$('.memberships-hourly-change').textContent = 'New text content';
 	} else if ($('#ranger').val() > 19 && $('#ranger').val() < 30){
 		$(".pd-membership-cost-2").html(($('#ranger').val()*160).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,"));
 		$('.pricing-card').removeClass('active-1 active-2 active-3');
