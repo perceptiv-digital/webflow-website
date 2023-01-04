@@ -145,15 +145,17 @@ $('#ranger').change(function(){
 		$(".pd-membership-cost").html(($('#ranger').val()*180).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,"));
 		$('.pricing-card').removeClass('active-1 active-2 active-3 display-hidden');
 		$('.pricing-card').addClass('active-1');      
-    		$('.memberships-hourly-change').textContent = 'New text content';
+    		$('.membership-hourly-change').textContent = 'New text content';
 	} else if ($('#ranger').val() > 19 && $('#ranger').val() < 30){
 		$(".pd-membership-cost-2").html(($('#ranger').val()*160).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,"));
 		$('.pricing-card').removeClass('active-1 active-2 active-3');
 		$('.pricing-card').addClass('active-2 display-hidden');
+		$('.membership-hourly-change').textContent = 'New text content2';
 	} else if ($('#ranger').val() > 29 && $('#ranger').val() < 101){
 		$(".pd-membership-cost-3").html(($('#ranger').val()*140).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,"));
 		$('.pricing-card').removeClass('active-1 active-2 active-3');
 		$('.pricing-card').addClass('active-3 display-hidden');
+		$('.membership-hourly-change').textContent = 'New text content3';
 	}
 }) 
 
